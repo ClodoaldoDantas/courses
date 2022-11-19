@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { useTheme } from 'styled-components'
 import {
   GraduationCap,
   Folder,
@@ -7,10 +9,10 @@ import {
   Gear,
 } from 'phosphor-react'
 
-import { useState } from 'react'
 import * as S from './styles'
 
 export function Sidebar() {
+  const theme = useTheme()
   const [menuItemActive, setMenuItemActive] = useState('folder')
 
   const menuItems = [
@@ -23,7 +25,7 @@ export function Sidebar() {
   return (
     <S.SidebarContainer>
       <S.SidebarLogo>
-        <GraduationCap size={36} color="#fff" />
+        <GraduationCap size={36} color={theme.colors.white} />
       </S.SidebarLogo>
 
       <S.Menu>

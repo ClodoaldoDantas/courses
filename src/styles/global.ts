@@ -9,17 +9,19 @@ export const GlobalStyle = createGlobalStyle`
 
   body, input, textarea, button {
     font-family: ${(props) => props.theme.font};
-    font-weight: ${(props) => props.theme.fontWeights.normal};
+
     font-size: ${(props) => props.theme.fontSizes.md};
   }
 
-  h1, h2, h3, strong {
+  h1, h2, h3 {
     color: ${(props) => props.theme.colors.black};
+    font-weight: ${(props) => props.theme.fontWeights.semibold};
   }
 
   body {
-    background-color: ${(props) => props.theme.colors.gray300};
+    background-color: ${(props) => props.theme.colors.gray200};
     color: ${(props) => props.theme.colors.gray400};
+    font-weight: ${(props) => props.theme.fontWeights.medium};
   }
 
   img {

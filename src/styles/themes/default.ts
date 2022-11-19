@@ -19,7 +19,8 @@ export const defaultTheme = {
     white: '#FFF',
     gray500: '#373B53',
     gray400: '#A6ACBE',
-    gray300: '#F8F8FB',
+    gray300: '#C9CED6',
+    gray200: '#F8F8FB',
     purple500: '#6F52ED',
   },
 }
