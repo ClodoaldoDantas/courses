@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background-color: ${(props) => props.theme.colors.gray300};
     color: ${(props) => props.theme.colors.gray400};
   }
 
