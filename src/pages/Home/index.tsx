@@ -12,6 +12,7 @@ import {
 import { Button } from '../../components/Button'
 import { SimpleCard, Card } from '../../components/Card'
 import { CircleIcon } from '../../components/CircleIcon'
+import { UserList } from '../../components/UserList'
 import * as S from './styles'
 
 export function Home() {
@@ -37,7 +38,7 @@ export function Home() {
       </S.Header>
 
       <S.Grid>
-        <SimpleCard className="card-one">
+        <SimpleCard className="card-students-total">
           <CircleIcon icon={User} variant="purple" />
 
           <div className="content">
@@ -46,7 +47,7 @@ export function Home() {
           </div>
         </SimpleCard>
 
-        <SimpleCard className="card-two">
+        <SimpleCard className="card-average">
           <CircleIcon icon={LineSegments} variant="green" />
 
           <div className="content">
@@ -55,7 +56,7 @@ export function Home() {
           </div>
         </SimpleCard>
 
-        <SimpleCard className="card-three">
+        <SimpleCard className="card-underperforming">
           <CircleIcon icon={TrendDown} variant="red" />
 
           <div className="content">
@@ -66,7 +67,7 @@ export function Home() {
           </div>
         </SimpleCard>
 
-        <SimpleCard className="card-four">
+        <SimpleCard className="card-homeworks">
           <CircleIcon icon={Book} />
 
           <div className="content">
@@ -75,25 +76,29 @@ export function Home() {
           </div>
         </SimpleCard>
 
-        <Card className="card-five">
+        <Card className="card-bar-chart">
           <header>
             <h3>Students number change per month</h3>
           </header>
         </Card>
 
-        <Card className="card-six">
+        <Card className="card-students-list">
           <header>
             <h3>Students by average mark</h3>
           </header>
+
+          <div className="content">
+            <UserList />
+          </div>
         </Card>
 
-        <Card className="card-seven">
+        <Card className="card-donut-chart">
           <header>
             <h3>Students by type of studying</h3>
           </header>
         </Card>
 
-        <SimpleCard className="card-eight">
+        <SimpleCard className="card-lections-left">
           <CircleIcon icon={Trophy} variant="yellow" />
 
           <div className="content">
@@ -102,7 +107,7 @@ export function Home() {
           </div>
         </SimpleCard>
 
-        <SimpleCard className="card-nine">
+        <SimpleCard className="card-hours-spent">
           <CircleIcon icon={Clock} />
 
           <div className="content">

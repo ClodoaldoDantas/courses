@@ -30,46 +30,46 @@ export const HeaderActions = styled.div`
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 154px 1fr 154px;
   grid-template-areas:
-    'cardOne cardTwo cardThree cardFour'
-    'cardFive cardFive cardSix cardSeven'
-    'cardEight cardNine cardSix cardSeven';
+    'cardStudentsTotal cardAverage cardUnderperforming cardHomeworks'
+    'cardBarChart cardBarChart cardStudentsList cardDonutChart'
+    'cardLectionsLeft cardHoursSpent cardStudentsList cardDonutChart';
   gap: 2.5rem;
 
-  .card-one {
-    grid-area: cardOne;
+  .card-students-total {
+    grid-area: cardStudentsTotal;
   }
 
-  .card-two {
-    grid-area: cardTwo;
+  .card-average {
+    grid-area: cardAverage;
   }
 
-  .card-three {
-    grid-area: cardThree;
+  .card-underperforming {
+    grid-area: cardUnderperforming;
   }
 
-  .card-four {
-    grid-area: cardFour;
+  .card-homeworks {
+    grid-area: cardHomeworks;
   }
 
-  .card-five {
-    grid-area: cardFive;
+  .card-bar-chart {
+    grid-area: cardBarChart;
   }
 
-  .card-six {
-    grid-area: cardSix;
+  .card-students-list {
+    grid-area: cardStudentsList;
   }
 
-  .card-seven {
-    grid-area: cardSeven;
+  .card-donut-chart {
+    grid-area: cardDonutChart;
   }
 
-  .card-eight {
-    grid-area: cardEight;
+  .card-lections-left {
+    grid-area: cardLectionsLeft;
   }
 
-  .card-nine {
-    grid-area: cardNine;
+  .card-hours-spent {
+    grid-area: cardHoursSpent;
   }
 `
