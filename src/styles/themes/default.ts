@@ -28,5 +28,6 @@ export const defaultTheme = {
     red500: '#FF4C61',
     blue500: '#4CB8FF',
     yellow500: '#FFB800',
+    orange500: '#FF7A00',
   },
 }

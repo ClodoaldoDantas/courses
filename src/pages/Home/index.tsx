@@ -1,5 +1,6 @@
 import {
   Book,
+  CaretDown,
   Clock,
   LineSegments,
   PencilSimple,
@@ -8,6 +9,7 @@ import {
   Trophy,
   User,
 } from 'phosphor-react'
+import { BarChart } from '../../components/BarChart'
 
 import { Button } from '../../components/Button'
 import { SimpleCard, Card } from '../../components/Card'
@@ -79,12 +81,25 @@ export function Home() {
         <Card className="card-bar-chart">
           <header>
             <h3>Students number change per month</h3>
+
+            <S.BarChatLegend>
+              <span>Applied</span>
+              <span>Left</span>
+            </S.BarChatLegend>
           </header>
+
+          <div className="content">
+            <BarChart />
+          </div>
         </Card>
 
         <Card className="card-students-list">
           <header>
             <h3>Students by average mark</h3>
+
+            <S.SortButton type="button">
+              Descending <CaretDown size={20} />
+            </S.SortButton>
           </header>
 
           <div className="content">

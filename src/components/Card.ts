@@ -38,6 +38,9 @@ export const Card = styled.div`
   header {
     padding: 1.5rem 2rem;
     border-bottom: 1px solid ${(props) => props.theme.colors.gray100};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     h3 {
       font-size: ${(props) => props.theme.fontSizes.sm};

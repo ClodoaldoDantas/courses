@@ -73,3 +73,42 @@ export const Grid = styled.div`
     grid-area: cardHoursSpent;
   }
 `
+
+export const BarChatLegend = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  span {
+    font-size: ${(props) => props.theme.fontSizes.sm};
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      margin-right: 12px;
+      border-radius: 50%;
+      background: red;
+    }
+
+    &:first-child::before {
+      background: ${(props) => props.theme.colors.purple500};
+    }
+
+    &:last-child::before {
+      background: ${(props) => props.theme.colors.orange500};
+    }
+  }
+`
+
+export const SortButton = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  border: 0;
+  background-color: transparent;
+  font-size: ${(props) => props.theme.fontSizes.sm};
+  color: ${(props) => props.theme.colors.gray400};
+`
