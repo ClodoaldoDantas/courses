@@ -10,6 +10,11 @@ export const SimpleCard = styled.div`
   padding: 2rem;
   border-bottom: 3px solid ${(props) => props.theme.colors.gray200};
 
+  @media (max-width: 1399.98px) {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
   .content {
     display: flex;
     flex-direction: column;

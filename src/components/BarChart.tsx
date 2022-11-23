@@ -17,7 +17,7 @@ export function BarChart() {
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: '30%',
+        columnWidth: '50%',
         borderRadius: 4,
       },
     },

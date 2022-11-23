@@ -37,6 +37,10 @@ export const Grid = styled.div`
     'cardLectionsLeft cardHoursSpent cardStudentsList cardDonutChart';
   gap: 2.5rem;
 
+  @media (max-width: 1399.98px) {
+    gap: 1.5rem;
+  }
+
   .card-students-total {
     grid-area: cardStudentsTotal;
   }

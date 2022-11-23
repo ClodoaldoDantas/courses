@@ -4,6 +4,7 @@ export const TopbarContainer = styled.div`
   position: fixed;
   top: 0;
   left: 100px;
+  z-index: 10;
 
   background-color: ${(props) => props.theme.colors.white};
   padding: 0 4rem;
