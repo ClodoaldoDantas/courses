@@ -1,10 +1,13 @@
 import styled from 'styled-components'
+import { devices } from '../../styles/devices'
 
 export const Header = styled.header`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3rem;
+  gap: 1rem;
 `
 
 export const HeaderContent = styled.div`
@@ -23,22 +26,53 @@ export const HeaderContent = styled.div`
 
 export const HeaderActions = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem 2rem;
+
+  @media ${devices.xs} {
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
 `
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 154px 1fr 154px;
   grid-template-areas:
     'cardStudentsTotal cardAverage cardUnderperforming cardHomeworks'
     'cardBarChart cardBarChart cardStudentsList cardDonutChart'
     'cardLectionsLeft cardHoursSpent cardStudentsList cardDonutChart';
   gap: 2.5rem;
 
-  @media (max-width: 1399.98px) {
+  @media ${devices.xl} {
     gap: 1.5rem;
+  }
+
+  @media ${devices.lg} {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'cardStudentsTotal cardAverage'
+      'cardUnderperforming cardHomeworks'
+      'cardBarChart cardBarChart'
+      'cardStudentsList cardDonutChart'
+      'cardLectionsLeft cardHoursSpent';
+  }
+
+  @media ${devices.xs} {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'cardStudentsTotal'
+      'cardAverage'
+      'cardUnderperforming'
+      'cardHomeworks'
+      'cardStudentsList'
+      'cardDonutChart'
+      'cardLectionsLeft'
+      'cardHoursSpent';
   }
 
   .card-students-total {
@@ -59,6 +93,10 @@ export const Grid = styled.div`
 
   .card-bar-chart {
     grid-area: cardBarChart;
+
+    @media ${devices.xs} {
+      display: none;
+    }
   }
 
   .card-students-list {

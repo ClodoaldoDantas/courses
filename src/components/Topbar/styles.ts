@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '../../styles/devices'
 
 export const TopbarContainer = styled.div`
   position: fixed;
@@ -14,6 +15,21 @@ export const TopbarContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media ${devices.xl} {
+    padding: 0 2.5rem;
+  }
+
+  @media ${devices.sm} {
+    left: 0;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0 2rem;
+  }
+
+  @media ${devices.xs} {
+    padding: 0 1rem;
+  }
 `
 
 export const TopbarNavigation = styled.nav`

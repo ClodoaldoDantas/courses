@@ -1,6 +1,8 @@
 import styled from 'styled-components'
+import { devices } from '../styles/devices'
 
 export const SimpleCard = styled.div`
+  min-height: 154px;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -10,7 +12,7 @@ export const SimpleCard = styled.div`
   padding: 2rem;
   border-bottom: 3px solid ${(props) => props.theme.colors.gray200};
 
-  @media (max-width: 1399.98px) {
+  @media ${devices.xl} {
     padding: 1.5rem;
     gap: 1.5rem;
   }

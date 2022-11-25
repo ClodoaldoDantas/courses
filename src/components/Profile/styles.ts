@@ -9,6 +9,10 @@ export const ProfileContainer = styled.button`
   img {
     margin-right: 0.75rem;
   }
+
+  svg {
+    flex-shrink: 0;
+  }
 `
 
 export const ProfileContent = styled.div`
