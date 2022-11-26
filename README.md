@@ -1,4 +1,4 @@
-## Course Dashboard
+## 🎓 Course Dashboard
 
 [![Author](https://img.shields.io/badge/author-ClodoaldoDantas-6F52ED)](https://github.com/ClodoaldoDantas)
 [![Languages](https://img.shields.io/github/languages/count/ClodoaldoDantas/course-dashboard?color=6F52ED)](#)
