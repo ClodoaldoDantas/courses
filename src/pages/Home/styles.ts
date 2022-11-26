@@ -144,6 +144,60 @@ export const BarChatLegend = styled.div`
   }
 `
 
+export const DonutChartLegend = styled.ul`
+  margin-top: 3.5rem;
+  list-style: none;
+
+  li + li {
+    margin-top: 1.75rem;
+  }
+`
+
+export const DonutChartLegendItem = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: ${(props) => props.theme.fontSizes.sm};
+
+  span {
+    color: ${(props) => props.theme.colors.gray400};
+
+    &::before {
+      content: '';
+      height: 8px;
+      width: 8px;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+    }
+  }
+
+  p {
+    color: ${(props) => props.theme.colors.black};
+  }
+
+  small {
+    font-size: ${(props) => props.theme.fontSizes.xs};
+    color: ${(props) => props.theme.colors.gray400};
+  }
+
+  &:first-child span::before {
+    background-color: ${(props) => props.theme.colors.purple500};
+  }
+
+  &:nth-child(2) span::before {
+    background-color: ${(props) => props.theme.colors.yellow500};
+  }
+
+  &:nth-child(3) span::before {
+    background-color: ${(props) => props.theme.colors.red500};
+  }
+
+  &:last-child span::before {
+    background-color: ${(props) => props.theme.colors.green500};
+  }
+`
+
 export const SortButton = styled.button`
   display: flex;
   align-items: center;

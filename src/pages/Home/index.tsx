@@ -9,11 +9,12 @@ import {
   Trophy,
   User,
 } from 'phosphor-react'
-import { BarChart } from '../../components/BarChart'
 
+import { BarChart } from '../../components/BarChart'
 import { Button } from '../../components/Button'
 import { SimpleCard, Card } from '../../components/Card'
 import { CircleIcon } from '../../components/CircleIcon'
+import { DonutChart } from '../../components/DonutChart'
 import { UserList } from '../../components/UserList'
 import * as S from './styles'
 
@@ -111,6 +112,40 @@ export function Home() {
           <header>
             <h3>Students by type of studying</h3>
           </header>
+
+          <div className="content">
+            <DonutChart />
+
+            <S.DonutChartLegend>
+              <S.DonutChartLegendItem>
+                <span>Groups of 20 students</span>
+                <p>
+                  20 <small>(32%)</small>
+                </p>
+              </S.DonutChartLegendItem>
+
+              <S.DonutChartLegendItem>
+                <span>Groups of 10 students</span>
+                <p>
+                  20 <small>(32%)</small>
+                </p>
+              </S.DonutChartLegendItem>
+
+              <S.DonutChartLegendItem>
+                <span>Groups of 5 students</span>
+                <p>
+                  15 <small>(24%)</small>
+                </p>
+              </S.DonutChartLegendItem>
+
+              <S.DonutChartLegendItem>
+                <span>Groups of 20 students</span>
+                <p>
+                  7 <small>(12%)</small>
+                </p>
+              </S.DonutChartLegendItem>
+            </S.DonutChartLegend>
+          </div>
         </Card>
 
         <SimpleCard className="card-lections-left">

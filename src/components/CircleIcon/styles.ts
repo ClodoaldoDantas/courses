@@ -27,8 +27,8 @@ export const CircleIconContainer = styled.div<CircleIconContainerProps>`
   ${(props) =>
     props.variant === 'green' &&
     css`
-      background: ${rgba(props.theme.colors.green500, 0.08)};
-      color: ${props.theme.colors.green500};
+      background: ${rgba(props.theme.colors.green400, 0.08)};
+      color: ${props.theme.colors.green400};
     `}
 
   ${(props) =>
