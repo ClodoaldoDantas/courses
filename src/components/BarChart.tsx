@@ -81,7 +81,7 @@ export function BarChart() {
       opacity: 1,
     },
     tooltip: {
-      enabled: false,
+      theme: 'dark',
     },
     legend: {
       show: false,
