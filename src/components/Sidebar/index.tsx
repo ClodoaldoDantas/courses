@@ -16,10 +16,10 @@ export function Sidebar() {
   const [menuItemActive, setMenuItemActive] = useState('folder')
 
   const menuItems = [
-    { id: 'folder', icon: Folder },
-    { id: 'chartBar', icon: ChartBar },
-    { id: 'envelope', icon: Envelope },
-    { id: 'file', icon: File },
+    { id: 'folder', icon: Folder, label: 'Projetos' },
+    { id: 'chartBar', icon: ChartBar, label: 'Estatísticas' },
+    { id: 'envelope', icon: Envelope, label: 'Mensagens' },
+    { id: 'file', icon: File, label: 'Arquivos' },
   ]
 
   return (
@@ -29,11 +29,12 @@ export function Sidebar() {
       </S.SidebarLogo>
 
       <S.Menu>
-        {menuItems.map(({ id, icon: Icon }) => (
+        {menuItems.map(({ id, icon: Icon, label }) => (
           <S.MenuItem
             key={id}
             onClick={() => setMenuItemActive(id)}
             className={menuItemActive === id ? 'active' : ''}
+            aria-label={label}
           >
             <Icon size={24} />
           </S.MenuItem>
@@ -41,7 +42,7 @@ export function Sidebar() {
       </S.Menu>
 
       <S.SiderbarFooter>
-        <S.MenuItem>
+        <S.MenuItem aria-label="Configurações">
           <Gear size={24} />
         </S.MenuItem>
       </S.SiderbarFooter>

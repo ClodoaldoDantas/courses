@@ -17,11 +17,11 @@ export function Topbar() {
       <S.TopbarNavigation>
         <Profile />
 
-        <S.TopbarButton type="button">
+        <S.TopbarButton type="button" aria-label="Notificações">
           <Bell size={24} color={theme.colors.gray400} />
         </S.TopbarButton>
 
-        <S.TopbarButton type="button">
+        <S.TopbarButton type="button" aria-label="Sair da conta">
           <SignOut size={24} color={theme.colors.gray400} />
         </S.TopbarButton>
       </S.TopbarNavigation>
